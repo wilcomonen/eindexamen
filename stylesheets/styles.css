@@ -1,13 +1,32 @@
 
 body {
   padding:50px;
-  font:18px/1.5 Arial, Helvetica,  sans-serif;
-  color:#000;
+  font:18px/1.5 Helvetica, arial,  sans-serif;
+  color:white;
   font-weight:300;
+  background-color: black;
+}
+
+aside{
+	position: relative;
+    width:270px;
+    float:right;
+    padding-bottom:50px;
+	padding-top: 50px;
+    margin-right:0px;
+}
+
+mark {
+    background: -webkit-linear-gradient(#c00, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c00, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c00, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c00, black); /* Standard syntax */
+    color: white;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:white;
   margin:0 0 20px;
 }
 
@@ -20,19 +39,31 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:100px;
+  text-shadow: 	0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
 }
 
 h2 {
-  color:#393939;
+  color:white;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:white;
 }
 
 a {
-  color:#39c;
+  color:white;
   font-weight:400;
   text-decoration:none;
 }
@@ -45,8 +76,8 @@ a small {
 }
 
 .wrapper {
-  width:900px;
-  margin:0 auto;
+  width: auto;
+  margin: auto;
 }
 
 blockquote {
@@ -94,14 +125,11 @@ img {
   max-width:100%;
 }
 nav {
-       width: 400px;
-	   position: fixed;
-       float: left;
-	   margin-top: 50px;
-   }
+     float: right;
+ }
 
 header {
-  width:400px;
+  width:270px;
   float:left;
   position:fixed;
 }
@@ -165,9 +193,10 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  width:400px;
+  float:left;
   padding-bottom:50px;
+  margin-left: 350px;
 }
 
 small {
@@ -182,6 +211,7 @@ hr {
 }
 
 footer {
+	font-size: 12px;
   width:270px;
   float:left;
   position:fixed;
