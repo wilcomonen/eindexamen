@@ -8,6 +8,7 @@ body {
 }
 
 aside{
+	font-size: 15px;
 	position: relative;
     width:270px;
     float:right;
