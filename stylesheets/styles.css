@@ -1,7 +1,7 @@
 
 body {
   padding:20px;
-  font:18px/1.5 Helvetica, arial,  sans-serif;
+  font:18px/1.5 "Helvetica Nue", helvetica, arial,  sans-serif;
   color:white;
   font-weight:300;
   background-color: black;
@@ -41,11 +41,12 @@ h1, h2, h3 {
 
 h1 {
   font-size:100px;
-  text-shadow: 	0 1px 0 #ccc,
-                 0 2px 0 #c9c9c9,
-                 0 3px 0 #bbb,
-                 0 4px 0 #b9b9b9,
-                 0 5px 0 #aaa,
+  text-color: blue;
+  text-shadow: 	0 1px 0 blue,
+                 0 2px 0 blue,
+                 0 3px 0 blue,
+                 0 4px 0 blue,
+                 0 5px 0 blue,
                  0 6px 1px rgba(0,0,0,.1),
                  0 0 5px rgba(0,0,0,.1),
                  0 1px 3px rgba(0,0,0,.3),
