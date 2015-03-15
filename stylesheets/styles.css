@@ -131,7 +131,7 @@ nav {
 	width:270px;
 	float:left;
 	position:fixed;
-	bottom:150px;
+	top:370px;
  }
 
 
@@ -271,6 +271,12 @@ footer {
   body {
     word-wrap:break-word;
   }
+  nav {
+  	width:720px;
+  	position:relative;
+  	top:0px;
+	padding: 20px;
+   }
   
   header {
     padding:0;
@@ -291,11 +297,24 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+	font-size: 24px;
   }
   
   header ul {
     display:none;
   }
+  nav {
+  	width:480px;
+  	position:relative;
+  	top:0px;
+	padding: 20px;
+   }
+   aside{
+   	font-size: 20px;
+   	position: absolute;
+    width:300px;
+   	padding-top: 50px;
+   }
 }
 
 @media print {
