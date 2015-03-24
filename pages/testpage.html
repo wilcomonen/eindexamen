@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,6 +42,15 @@
 		       padding-left: 15px; 
 		   } 
 		</style>
+		<script type="text/javascript">
+		setTimeout(function(){
+		    document.getElementById("video-one").play();
+		}, 5000);
+		
+		setTimeout(function(){
+		    document.getElementById("video-two").play();
+		}, 8000);
+		</script>
   </head>
   <body>
     <div class="wrapper">
@@ -62,30 +72,53 @@
 				  <li><a href="testpage.html">Test page</a></li>
 	              </ul>
 	          </nav>
-      <section>
-        <h2>Test Page</h2>
-
-<p>-</p>
-		
-      </section>
+    
        <footer>
           <p>This project is maintained by <a href="https://github.com/wilcomonen">wilcomonen</a></p>
         </footer>
     </div>
 	
-    <script type="text/javascript" src="swfobject.js"></script>    
-    <div id="ytapiplayer">
-      You need Flash player 8+ and JavaScript enabled to view this video.
-    </div>
-
-    <script type="text/javascript">
-
-      var params = { allowScriptAccess: "always" };
-      var atts = { id: "myytplayer" };
-      swfobject.embedSWF("http://www.youtube.com/v/VIDEO_ID?enablejsapi=1&playerapiid=ytplayer&version=3",
-                         "ytapiplayer", "425", "356", "8", null, null, params, atts);
-
-    </script>
+	<table width="100%" border="0" align="center">
+	  <tr>
+	    <td> <video id="video-one" width="386" height="261"  controls>
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video></td>
+	 <td><video id="video-two" width="386" height="261"  controls>
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video>
+	</td>
+	  <td><video width="386" height="261"  controls>
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video>
+	  </td>
+	  </tr>
+	  <tr>
+	     <td><video width="386" height="261"  >
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video>
+	  </td>
+	     <td><video width="386" height="261"  >
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video>
+	</td>
+	      <td><video width="386" height="261"  >
+	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	      <source src="mov_bbb.ogg" type="video/ogg">
+		  	</video></td>
+	  </tr>
+	</table>
+	</tr>
+	</td>
+	</table>
+	
+	<video id="myVideo" src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4">
+	
+	
 	
     
   </body>
