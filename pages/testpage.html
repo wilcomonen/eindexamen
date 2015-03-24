@@ -45,11 +45,15 @@
 		<script type="text/javascript">
 		setTimeout(function(){
 		    document.getElementById("video-one").play();
-		}, 5000);
+		}, 0);
+		
+		setTimeout(function(){
+		    document.getElementById("video-three").play();
+		}, 17000);
 		
 		setTimeout(function(){
 		    document.getElementById("video-two").play();
-		}, 8000);
+		}, 68000);
 		</script>
   </head>
   <body>
@@ -80,34 +84,34 @@
 	
 	<table width="100%" border="0" align="center">
 	  <tr>
-	    <td> <video id="video-one" width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	    <td> <video id="video-one" width="386" height="261" preload>
+	  <source src="../vid/zombie apocalypse.mp4" type="video/mp4">
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video></td>
-	 <td><video id="video-two" width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	 <td><video id="video-two" width="386" height="261"  preload>
+	  <source src="../vid/Chibatman.mp4" type="video/mp4">
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video>
 	</td>
-	  <td><video width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	  <td><video id="video-three" width="386" height="261"  preload>
+	  <source src="../vid/eclipse.mp4" type="video/mp4" >
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video>
 	  </td>
 	  </tr>
 	  <tr>
 	     <td><video width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	  <source src="../vid/Ronin.mp4" type="video/mp4">
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video>
 	  </td>
 	     <td><video width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	  <source src="../vid/Push the red button.mp4" type="video/mp4">
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video>
 	</td>
 	      <td><video width="386" height="261"  >
-	  <source src="../vid/eclipse.mp4" type="video/mp4">
+	  <source src="" type="video/mp4">
 	      <source src="mov_bbb.ogg" type="video/ogg">
 		  	</video></td>
 	  </tr>
