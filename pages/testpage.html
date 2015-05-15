@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta http-equiv="Refresh" content="74">
+	<meta http-equiv="Refresh" content="30">
 
 	
     <!--[if lt IE 9]>
@@ -42,48 +42,40 @@
 		       background-position: 0px 10px ; 
 		       padding-left: 15px; 
 		   } 
+		   
+		   .videohead
+		   {
+			   float:left;
+			   position: absolute;
+			   
+		   margin: 5px 0 0 100px;
+		   }
+
+		   .logo
+		   {
+			   float: left;
+			   position: absolute;
+		   		margin-top: 20px;
+		   		margin-left: 115px;
+		   }
 		</style>
 		<script type="text/javascript">
-		setTimeout(function(){
-		    document.getElementById("video-one").play();
-		}, 550);
-		
-		setTimeout(function(){
-		    document.getElementById("video-two").play();
-		}, 36000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-three").play();
-		}, 17000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-four").play();
-		}, 17000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-five").play();
-		}, 36000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-six").play();
-		}, 0);
-		
-		setTimeout(function(){
-		    document.getElementById("video-seven").play();
-		}, 64000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-eight").play();
-		}, 500000);
-		
-		setTimeout(function(){
-		    document.getElementById("video-nine").play();
-		}, 64000);
-		
-		
+		  var imageURLs = [
+		       "../images/breaking-news.gif"
+		     , "../images/live.gif"
+		     , "../images/2015.gif"
+		  ];
+		  function getImageTag() {
+		    var img = '<img src=\"';
+		    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+		    img += imageURLs[randomIndex];
+		    img += '\" alt=\"Some alt text\"/>';
+		    return img;
+		  }
 		</script>
   </head>
   <body>
+	
     <div class="wrapper">
 
         
@@ -100,61 +92,20 @@
 				 </div>
 	          </nav>
     
-	<table border="0" align="center">
-	  <tr>
-	    <td> <video id="video-one" width="386" height="261" poster="" preload="auto" >
-	  <source src="../vid/zombie apocalypse.mp4" type="video/mp4">
-	      <source src="mov_bbb.ogg" type="video/ogg">
-		  	</video></td>
-			
-	 <td><video id="video-two" width="386" height="261" poster="black" preload >
-	  <source src="../vid/Flames.mp4" type="video/mp4">
-	      <source src="mov_bbb.ogg" type="video/ogg">
-		  	</video></td>
-			
-	  <td><video id="video-three" width="386" height="261" poster="black" preload >
-	  <source src="../vid/bbclight.mp4" type="video/mp4"  >
-	      <source src="mov_bbb.ogg" type="video/ogg">
-		  	</video></td>
-	  	    
-			<td><video id="video-five" width="386" height="261" poster="black" preload>
-	  	  <source src="../vid/TerrorAttack.mp4" type="video/mp4">
-	  	      <source src="mov_bbb.ogg" type="video/ogg">
-	  		  	</video></td>
-	  	  	  
-	  </tr>
-	  <tr>
-	  	     <td><video id="video-four" width="386" height="261" poster="black" preload>
-	  	  <source src="../vid/BurnBabyBurn.mp4" type="video/mp4">
-	  	      <source src="mov_bbb.ogg" type="video/ogg">
-	  		  	</video></td>
-			
-	      <td><video id="video-six" width="386" height="261" preload >
-	  <source src="../vid/Assad Burns.mp4" type="video/mp4">
-	      <source src="mov_bbb.ogg" type="video/ogg">
-		  	</video></td>
-			
- 	     <td><video id="video-seven" width="386" height="261" poster="black" preload>
- 	  <source src="../vid/christiansflee.mp4" type="video/mp4">
- 	      <source src="mov_bbb.ogg" type="video/ogg">
- 		  	</video></td>
-			
-	   	     <td><video id="video-eight" width="386" height="261" poster="black" preload>
-	   	  <source src="" type="video/mp4">
-	   	      <source src="mov_bbb.ogg" type="video/ogg">
-	   		  	</video></td>
-			</tr>
-			<tr>
-	   	     <td><video id="video-nine" width="386" height="261" poster="black" preload>
-	   	  <source src="../vid/livenativity.mp4" type="video/mp4">
-	   	      <source src="mov_bbb.ogg" type="video/ogg">
-	   		  	</video></td>
-  	  </tr>
-	</tr>
-	</td>
-	</table>
+	
+	<div class="videohead">
+	<video loop="loop" autoplay="autoplay" > 
+	<source src="../vid/Baltimore Riots Cause CHAOS (RAW FOOTAGE) 2015.mp4" type="video/mp4" />
+</video>
+	
+	</div>
+	<div class="logo">
+  <script type="text/javascript">
+    document.write(getImageTag());
+  </script>
+</div>
 
-    </div>
+   
 	
 	
 	
